@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Ng2ImgMaxService } from 'ng2-img-max';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
@@ -14,23 +13,23 @@ export class AppComponent {
 
   title = 'anamorphic-desqueeze';
 
-  constructor(private ng2ImgMax: Ng2ImgMaxService,public sanitizer: DomSanitizer) {
+  constructor(public sanitizer: DomSanitizer) {
 
   }
 
   onImageChange(event) {
     let image = event.target.files[0];
   
-    this.ng2ImgMax.resizeImage(image, 400, 300).subscribe(
-      result => {
-        this.uploadedImage = new File([result], result.name);
-        this.downloadFile(this.uploadedImage);
-        console.log("IMG",this.uploadedImage)
-      },
-      error => {
-        console.log('😢 Oh no!', error);
-      }
-    );
+    // this.ng2ImgMax.resizeImage(image, 400, 300).subscribe(
+    //   result => {
+    //     this.uploadedImage = new File([result], result.name);
+    //     this.downloadFile(this.uploadedImage);
+    //     console.log("IMG",this.uploadedImage)
+    //   },
+    //   error => {
+    //     console.log('😢 Oh no!', error);
+    //   }
+    // );
   }
 
   downloadFile(data) {

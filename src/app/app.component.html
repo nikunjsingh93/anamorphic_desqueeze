@@ -1,6 +1,4 @@
 <input type="file" (change)="onImageChange($event)" accept="image/*">
-<img
-  *ngIf="imagePreview"
-  [src]="sanitizer.bypassSecurityTrustUrl(imagePreview)">
+
 
   <a [href]="fileUrl" download="file.jpg">DownloadFile</a>

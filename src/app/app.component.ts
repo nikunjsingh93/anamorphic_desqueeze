@@ -18,18 +18,26 @@ export class AppComponent {
   }
 
   onImageChange(event) {
-    let image = event.target.files[0];
-  
-    // this.ng2ImgMax.resizeImage(image, 400, 300).subscribe(
-    //   result => {
-    //     this.uploadedImage = new File([result], result.name);
-    //     this.downloadFile(this.uploadedImage);
-    //     console.log("IMG",this.uploadedImage)
-    //   },
-    //   error => {
-    //     console.log('😢 Oh no!', error);
-    //   }
-    // );
+
+    const fileName = event.target.files[0].name;
+
+    let img = new Image();
+
+    img = event.target.files[0];
+
+
+    console.log("Yes", img)
+
+    img.width = 3840;
+    img.height = 919;
+
+    console.log("Yes2", img)
+
+
+
+    this.downloadFile(img);
+
+
   }
 
   downloadFile(data) {
@@ -39,4 +47,5 @@ export class AppComponent {
     this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
   }
 
+ 
 }

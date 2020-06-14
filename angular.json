@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "anamorphic-desqueeze"
+    }
+  },
+  "defaultProject": "anamorphic-desqueeze",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -36,7 +36,8 @@ export class AppComponent {
       const img = new Image();
       img.src = src;
       console.log("in compp",img)
-    //  img.onload = () => {
+      
+      setTimeout( () => {
         const elem = document.createElement('canvas');
         elem.width = newX;
         elem.height = newY;
@@ -47,8 +48,10 @@ export class AppComponent {
         var image = new Image();
         image.src = data;
         this.downloadFile(image);
+
+      }, 1000);
       
-      //}
+    
   }
 
 

@@ -26,12 +26,36 @@ export class AppComponent {
     img = event.target.files[0];
 
 
-    this.downloadFile(img);
+    this.compressImage(event.target.files[0],3840,919);
 
 
   }
 
+   compressImage(src, newX, newY) {
+   
+      const img = new Image();
+      img.src = src;
+      console.log("in compp",img)
+    //  img.onload = () => {
+        const elem = document.createElement('canvas');
+        elem.width = newX;
+        elem.height = newY;
+        const ctx = elem.getContext('2d');
+        ctx.drawImage(img, 0, 0, newX, newY);
+        const data = ctx.canvas.toDataURL("image/jpeg");
+        console.log("in load",data)
+        var image = new Image();
+        image.src = data;
+        this.downloadFile(image);
+      
+      //}
+  }
+
+
+
   downloadFile(data) {
+
+    console.log("in down",data);
 
     const blob = new Blob([data], { type: 'data:image/jpeg;base64' });
 

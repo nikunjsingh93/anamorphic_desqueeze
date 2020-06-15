@@ -26,15 +26,6 @@ export class AppComponent {
     img = event.target.files[0];
 
 
-    console.log("Yes", img)
-
-    img.width = 3840;
-    img.height = 919;
-
-    console.log("Yes2", img)
-
-
-
     this.downloadFile(img);
 
 

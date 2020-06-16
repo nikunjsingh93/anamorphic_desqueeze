@@ -34,6 +34,10 @@ button {
     padding-bottom: 10px;
 }
 
+.padding-bottom-30 {
+    padding-bottom: 30px !important;
+}
+
 .fromBot {
    padding-left: 10px;
    background-color: #E4E4E8;
@@ -106,3 +110,31 @@ button {
     width: 50%;
     padding: 10px;
   }
+
+.full-card  {
+    background-color: #222029;
+  }
+
+  .down-card  {
+    background-color: #333139;
+  }
+
+
+
+  .text-color {
+    color: white;
+  }
+
+  a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a {font-size: 20px}

@@ -1,19 +1,19 @@
 <div class="flex-wrap col-100">
   <div class="col-60"></div>
   <div class="col-40 padding-top-100">
-    <mat-card>
+    <mat-card class="full-card">
       <div  class="center">
-      <h1>Anamorphic Desqueeze</h1>
-      <h4>Convert your Anamorphic Images from 16:9 to 2.35:1 format</h4>
-      <h5>load image from your Laptop or mobile and click on download</h5>
+      <h1 class="text-color">Anamorphic Desqueeze</h1>
+      <h4 class="text-color">Convert your Anamorphic Images from 16:9 to 2.35:1 format</h4>
+      <h5 class="text-color">load image from your Laptop or mobile and click on download</h5>
     </div>
-      <div class="padding-bottom-10 center">
-        <input type="file" (change)="onImageChange($event)" accept="image/*">
+      <div class="padding-bottom-30 center">
+        <input class="text-color" type="file" (change)="onImageChange($event)" accept="image/*">
       </div>
 
-      <mat-card>
+      <mat-card *ngIf="showDownload" class="down-card">
         <div class="center">
-          <a [href]="fileUrl" *ngIf="showDownload" download="{{fileName}}" class="">Download Converted Image</a>
+         <a class="text-color" [href]="fileUrl"  download="{{fileName}}" class="">Download Image</a>
         </div>
       </mat-card>
 

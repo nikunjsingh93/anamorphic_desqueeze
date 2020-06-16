@@ -72,9 +72,9 @@ export class AppComponent {
         var img = new Image();
         img.onload = () => {
         console.log("in img onload");
-            canvas.width = img.width;
-            canvas.height = img.height;
-            ctx.drawImage(img,0,0);
+            canvas.width = 3840;
+            canvas.height = 1634;
+            ctx.drawImage(img,0,0,3840,1634);
         }
         console.log("in strr",event.target.result);
         img.src = event.target.result as string;

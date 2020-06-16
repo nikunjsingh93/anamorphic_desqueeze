@@ -1,6 +1,6 @@
 # AnamorphicDesqueeze
 
-Convert your Anamorphic Images from 16:9 to 2.35:1 format on your Phone or Laptop. Desqueezing app for anamorphic lenses for smartphones. 
+Convert your Anamorphic Images from 16:9 to 2.35:1 format on your Phone or Laptop. Desqueezing PWA app for anamorphic lenses for smartphones. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 

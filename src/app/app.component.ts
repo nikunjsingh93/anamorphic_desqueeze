@@ -10,6 +10,7 @@ export class AppComponent {
 
   fileUrl = '';
   showDownload;
+  fileName;
 
   title = 'anamorphic-desqueeze';
 
@@ -20,6 +21,11 @@ export class AppComponent {
   onImageChange(event) {
     this.showDownload = false;
     this.fileUrl = '';
+
+    var removeExtension = event.target.files[0].name;
+    removeExtension = removeExtension.substring(0, removeExtension.indexOf('.'));
+
+    this.fileName = removeExtension + "_converted.jpg" ;
 
     this.handleImage(event);
 

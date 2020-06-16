@@ -60,8 +60,9 @@ export class AppComponent {
 
 
   handleImage(e){
-    const canvas = document.createElement('canvas');
-    const ctx = canvas.getContext('2d');
+    var canvas = <HTMLCanvasElement> document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+
     var reader = new FileReader();
 
 

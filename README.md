@@ -2,9 +2,38 @@
 
 Convert your Anamorphic Images from 16:9 to 2.35:1 format on your Phone or Laptop. Desqueezing PWA app for anamorphic lenses for smartphones. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+# Application Link
+
+link: https://nikunjsingh93.github.io/anamorphic_desqueeze/
+
+# How to install PWA
+
+On iPhone:
+Open the above link in safari. Click on Add to Homescreen. 
+
+
+On Android:
+Open the above link in Chrome for Android. Click three dots. Add to Homescreen.
+
+
+On Laptop/Desktop:
+Open the above link in Chrome Desktop Browser. Click on three dots > More Tools > Create Shortcut. Tick on Open as Window and click Add. 
+
+
+
+# Screenshots
+
+![Capture](https://user-images.githubusercontent.com/31995471/84731540-28400d00-af67-11ea-96b0-1859edb01f02.PNG)
+
+![Screenshot_20200616-001712](https://user-images.githubusercontent.com/31995471/84731544-2d9d5780-af67-11ea-820f-019b298484fd.jpg)
+
+
+
+
 
 ## Development server
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 

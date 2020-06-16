@@ -8,7 +8,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class AppComponent {
 
-  fileUrl;
+  fileUrl = '';
+  showDownload;
 
   title = 'anamorphic-desqueeze';
 
@@ -17,6 +18,8 @@ export class AppComponent {
   }
 
   onImageChange(event) {
+    this.showDownload = false;
+    this.fileUrl = '';
 
     this.handleImage(event);
 
@@ -39,6 +42,9 @@ export class AppComponent {
             ctx.drawImage(img,0,0,3840,1634);
             var image = canvas.toDataURL("image/jpg");
             this.fileUrl = image;
+            if(this.fileUrl != '') {
+              this.showDownload =true;
+            }
         }
         img.src = event.target.result as string;
     }

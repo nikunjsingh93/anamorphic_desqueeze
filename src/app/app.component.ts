@@ -26,7 +26,7 @@ export class AppComponent {
 
 
   handleImage(e){
-    var canvas = <HTMLCanvasElement> document.getElementById("canvas");
+    var canvas = <HTMLCanvasElement> document.createElement("canvas");
     var ctx = canvas.getContext("2d");
 
     var reader = new FileReader();

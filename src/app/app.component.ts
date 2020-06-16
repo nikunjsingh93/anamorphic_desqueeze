@@ -9,9 +9,6 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class AppComponent {
 
   fileUrl;
-  uploadedImage: Blob;
-
-  imgSrc = '';
 
   title = 'anamorphic-desqueeze';
 
@@ -44,7 +41,6 @@ export class AppComponent {
             this.fileUrl = image;
         }
         img.src = event.target.result as string;
-        this.imgSrc = img.src;
     }
  
     reader.readAsDataURL(e.target.files[0]);  

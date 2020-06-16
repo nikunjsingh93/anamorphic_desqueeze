@@ -1,6 +1,18 @@
-<input type="file" (change)="onImageChange($event)" accept="image/*">
+<div class="flex-wrap col-100">
+  <div class="col-60"></div>
+  <div class="col-40 padding-top-100">
+    <mat-card>
+      <h1>Anamorphic Desqueeze</h1>
 
 
-  <a [href]="fileUrl" download="converted.jpg">DownloadFile</a>
+      <input type="file" (change)="onImageChange($event)" accept="image/*">
 
-  <!-- <canvas id="canvas"></canvas> -->
+
+      <a [href]="fileUrl" download="converted.jpg">DownloadFile</a>
+
+
+
+    </mat-card>
+  </div>
+  <div class="col-60"></div>
+</div>

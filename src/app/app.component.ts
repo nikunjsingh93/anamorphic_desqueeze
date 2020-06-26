@@ -13,6 +13,7 @@ export class AppComponent {
   fileName;
 
   title = 'anamorphic-desqueeze';
+  desqueezeValue = 2.35;
 
   constructor(public sanitizer: DomSanitizer) {
 
@@ -43,7 +44,7 @@ export class AppComponent {
     reader.onload = (event) => {
       var img = new Image();
       img.onload = () => {
-        let newheight =  parseInt((img.width / 2.35).toFixed(0));
+        let newheight =  parseInt((img.width / this.desqueezeValue).toFixed(0));
         canvas.width = img.width;
         canvas.height = newheight;
         ctx.drawImage(img, 0, 0, img.width, newheight);
@@ -57,6 +58,12 @@ export class AppComponent {
     }
 
     reader.readAsDataURL(e.target.files[0]);
+  }
+
+
+  changeValue(event: Event) {
+
+    this.desqueezeValue = Number((event.target as HTMLInputElement).value)
   }
 
 

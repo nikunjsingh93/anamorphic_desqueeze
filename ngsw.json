@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1592280598813,
+  "timestamp": 1593198505102,
   "index": "https://nikunjsingh93.github.io/anamorphic_desqueeze/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "https://nikunjsingh93.github.io/anamorphic_desqueeze/favicon.ico",
         "https://nikunjsingh93.github.io/anamorphic_desqueeze/index.html",
-        "https://nikunjsingh93.github.io/anamorphic_desqueeze/main-es2015.e8a439b7a2864e1c4459.js",
-        "https://nikunjsingh93.github.io/anamorphic_desqueeze/main-es5.e8a439b7a2864e1c4459.js",
+        "https://nikunjsingh93.github.io/anamorphic_desqueeze/main-es2015.37be89dbe7d4e23259ea.js",
+        "https://nikunjsingh93.github.io/anamorphic_desqueeze/main-es5.37be89dbe7d4e23259ea.js",
         "https://nikunjsingh93.github.io/anamorphic_desqueeze/manifest.webmanifest",
         "https://nikunjsingh93.github.io/anamorphic_desqueeze/polyfills-es2015.690002c25ea8557bb4b0.js",
         "https://nikunjsingh93.github.io/anamorphic_desqueeze/polyfills-es5.9e286f6d9247438cbb02.js",
@@ -49,9 +49,9 @@
     "https://nikunjsingh93.github.io/anamorphic_desqueeze/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://nikunjsingh93.github.io/anamorphic_desqueeze/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://nikunjsingh93.github.io/anamorphic_desqueeze/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://nikunjsingh93.github.io/anamorphic_desqueeze/index.html": "4d2d3ba217c5f56f45c11028812f09ece5fd4557",
-    "https://nikunjsingh93.github.io/anamorphic_desqueeze/main-es2015.e8a439b7a2864e1c4459.js": "e6361bc1aee6a148ddc17d5144d615dcbffc2390",
-    "https://nikunjsingh93.github.io/anamorphic_desqueeze/main-es5.e8a439b7a2864e1c4459.js": "78bb651378a158451a1512b96b1d9051a2460c48",
+    "https://nikunjsingh93.github.io/anamorphic_desqueeze/index.html": "1826a53ee3f4d40564916a046a6a8ec458fc1e5f",
+    "https://nikunjsingh93.github.io/anamorphic_desqueeze/main-es2015.37be89dbe7d4e23259ea.js": "4411ecb1df0a2e3ecfd229851ec9656063db7edf",
+    "https://nikunjsingh93.github.io/anamorphic_desqueeze/main-es5.37be89dbe7d4e23259ea.js": "beaa316fef7301243ff4fbbc4ff5ad64feb4dad8",
     "https://nikunjsingh93.github.io/anamorphic_desqueeze/manifest.webmanifest": "336a325a73297097e3570cc908c2c9fa801e518b",
     "https://nikunjsingh93.github.io/anamorphic_desqueeze/polyfills-es2015.690002c25ea8557bb4b0.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "https://nikunjsingh93.github.io/anamorphic_desqueeze/polyfills-es5.9e286f6d9247438cbb02.js": "8aa26ea87b9958c6bd13b7c257c0e9940438e684",
